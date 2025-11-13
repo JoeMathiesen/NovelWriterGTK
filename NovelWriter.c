@@ -66,7 +66,6 @@ static void saveas_file (GtkWidget *btn, gpointer ptr)
 	}
 	gtk_widget_destroy(sch);
 }
-			
 
 void main (int argc, char *argv[])
 {
@@ -207,9 +206,9 @@ void main (int argc, char *argv[])
   // Side Panel Tree View
   GtkListStore *ls = gtk_list_store_new (2, G_TYPE_STRING, GDK_TYPE_PIXBUF);
   GdkPixbuf *icon = gtk_icon_theme_load_icon(gtk_icon_theme_get_default(), "dialog-ok-apply", 32, 0, NULL);
-  gtk_list_store_insert_with_values (ls, NULL, pos++, 0, "Option 1", 1, icon, -1);
-  gtk_list_store_insert_with_values (ls, NULL, pos++, 0, "Option 2", 1, icon, -1);
-  gtk_list_store_insert_with_values (ls, NULL, pos++, 0, "Option 3", 1, icon, -1);
+  gtk_list_store_insert_with_values (ls, NULL, pos++, 0, "Chapter 1", 1, icon, -1);
+  gtk_list_store_insert_with_values (ls, NULL, pos++, 0, "Chapter 2", 1, icon, -1);
+  gtk_list_store_insert_with_values (ls, NULL, pos++, 0, "Chapter 3", 1, icon, -1);
 
   GtkWidget *tv = gtk_tree_view_new_with_model(GTK_TREE_MODEL(ls));
 
