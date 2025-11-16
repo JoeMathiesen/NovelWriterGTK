@@ -187,7 +187,7 @@ void main (int argc, char *argv[])
   gtk_menu_shell_append(GTK_MENU_SHELL (t_menu), scenebuilder_mi);
 
   // File Sub Menu Signals
-  g_signal_connect (new_mi, "activate", G_CALLBACK(new_book), NULL);
+  g_signal_connect (new_mi, "activate", G_CALLBACK(open), NULL);
   g_signal_connect (open_mi, "activate", G_CALLBACK(open), NULL);
   g_signal_connect (save_mi, "activate", G_CALLBACK(save_file), NULL);
   g_signal_connect (saveas_mi, "activate", G_CALLBACK(saveas_file), NULL);
